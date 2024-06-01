@@ -7,13 +7,16 @@ const messages = [
 ];
 
 export default function App() {
-  let [step, setStep] = useState(1);
+  const [step, setStep] = useState(1);
+  const [test, setTest] = useState({ name: "Jonas" });
 
   function handlePrevious() {
     if (step > 1) setStep(step - 1);
   }
   function handleNext() {
     if (step < 3) setStep(step + 1);
+
+    setTest({ name: "Fred" });
   }
   return (
     <div className="steps">
