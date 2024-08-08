@@ -14,7 +14,6 @@ export default function App() {
       <Steps />
       <Steps />
       <Steps />
-      <Steps />
     </div>
   );
 }
